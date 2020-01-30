@@ -24,3 +24,5 @@ infer: clean
 	infer-capture -- make
 	infer-analyze -- make
 
+static:	clean
+	scan-build make
