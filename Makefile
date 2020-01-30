@@ -1,4 +1,4 @@
-EXEC 	= text
+EXEC 	= test
 
 SOURCES = $(wildcard *.c)
 OBJECTS = $(SOURCES:%.c=%.o)
