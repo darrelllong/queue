@@ -1,4 +1,4 @@
 # Queue
-A simple queue implementation for instructional purposes. 
+A simple circular queue implementation for instructional purposes. 
 
 * Once created, the queue has fixed size.
