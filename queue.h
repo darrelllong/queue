@@ -7,10 +7,10 @@
 typedef uint32_t item;
 
 typedef struct queue {
-  uint32_t head;
-  uint32_t tail;
-  uint32_t size;
-  item *Q;
+    uint32_t head;
+    uint32_t tail;
+    uint32_t size;
+    item *Q;
 } queue;
 
 queue *newQueue(uint32_t);
