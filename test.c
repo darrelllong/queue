@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    queue *q = newQueue(n);
+    queue *q = newQ(n);
 
     for (uint32_t i = 0; !fullQ(q); i += 1) {
         (void) enqueue(q, &i);
@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
         printf("%d\n", x);
     }
 
-    delQueue(q);
+    delQ(q);
 
     return 0;
 }
