@@ -1,5 +1,4 @@
-#ifndef _QUEUE_H
-#define _QUEUE_H
+#pragma once
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -13,9 +12,9 @@ typedef struct queue {
     item *Q;
 } queue;
 
-queue *newQueue(uint32_t);
+queue *newQ(uint32_t);
 
-void delQueue(queue *);
+void delQ(queue *);
 
 bool emptyQ(queue *);
 
@@ -24,4 +23,3 @@ bool fullQ(queue *);
 bool enqueue(queue *, item *);
 
 bool dequeue(queue *, item *);
-#endif

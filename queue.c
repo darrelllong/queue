@@ -6,7 +6,7 @@ static uint32_t succ(queue *q, uint32_t n) {
     return (n + 1) % q->size;
 }
 
-queue *newQueue(uint32_t size) {
+queue *newQ(uint32_t size) {
     queue *q = (queue *) malloc(sizeof(queue));
     if (q) {
         q->head = q->tail = 0;
@@ -20,7 +20,7 @@ queue *newQueue(uint32_t size) {
     return (queue *) 0;
 }
 
-void delQueue(queue *q) {
+void delQ(queue *q) {
     if (q) {
         free(q->Q);
         free(q);
