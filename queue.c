@@ -42,10 +42,7 @@ bool fullQ(queue *q) {
 }
 
 bool enqueue(queue *q, item *i) {
-    if (q) {
-        if (fullQ(q)) {
-            return false;
-        }
+    if (q && !fullQ(q)) {
         q->Q[q->head] = *i;
         q->head = succ(q, q->head);
         return true;
@@ -55,10 +52,7 @@ bool enqueue(queue *q, item *i) {
 }
 
 bool dequeue(queue *q, item *i) {
-    if (q) {
-        if (emptyQ(q)) {
-            return false;
-        }
+    if (q && !emptyQ(q)) {
         *i = q->Q[q->tail];
         q->tail = succ(q, q->tail);
         return true;
